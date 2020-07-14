@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Current Day and Time
+        </title>
+        
+        <script type="text/javascript">
+            //To get current day
+            var today = new Date();
+            var day = today.getDay();
+            var days = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+            document.write("Today is : " + days[day]+".....");
+
+            //To get current time
+            var hours = today.getHours()
+            var minutes = today.getMinutes()
+            var seconds = today.getSeconds()
+            var am_pm = "AM";
+            if (hours >= 12) {
+                am_pm = "PM";
+                hours = hours - 12;
+            }
+            if (hours == 0) {
+                hours = 12;
+            }
+            document.write("Current Time is : " + hours + am_pm + ":" + minutes + ":" +seconds );
+
+        </script>
+
+    </head>
+</html>
