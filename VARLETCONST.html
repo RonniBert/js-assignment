@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>varletconst</title>
+    <script>
+        
+        /*  1)var declarations are globally scoped.
+            2)var is s function/locally scoped when it is declared within a function.
+        */
+        var greeter = "hey hi";
+        function newFunction() {
+            var hello = "hello";
+        }
+        console.log(greeter); // "hey hi"
+
+        /*  1)let can be used only within the scope,where it is declared.
+            2)let can be updated but not re-declared.
+        */
+        let greeting = "say Hi";
+        if (true) {
+            let greeting = "say Hello instead";
+            console.log(greeting); // "say Hello instead"
+        }
+        console.log(greeting); // "say Hi"
+
+        /*  1)const declarations can only be accessed within the block they were declared.
+            2)const cannot be updated or re-declared.
+        */
+        const x = 12; 
+        x = 13; 
+        x += 1; 
+        console.log(x); //error occurs because of assignment to const 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

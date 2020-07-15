@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Methods</title>
+    <script>
+
+        console.log("Hello! Press the button to clear the console!");
+        function myFunction() {
+          console.clear();
+        }
+
+        function myFunctions() {
+            for (i = 0; i < 10; i++) {
+             console.count();
+            }
+        }
+
+        function myFunc() {
+          console.info("Message is written in console");
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>JavaScript console.clear() Method</h1>
+    <button onclick="myFunction()">Clear Console</button>
+
+    <h1>JavaScript console.count() Method</h1>
+    <button onclick="myFunctions()">Count Console</button>
+
+    <h1>JavaScript console.info() Method</h1>
+    <button onclick="myFunc()">Info Console</button>
+</body>
+</html>
