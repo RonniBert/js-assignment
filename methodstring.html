@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+            var str = "Hello Everyone!"; 
+            var n = str.search("Everyone");             //search the position
+            document.getElementById("demo").innerHTML = n;
+        }
+
+        function myFunction1() {
+            var str = "Hello world!";
+            document.getElementById("demo1").innerHTML = str.repeat(2); //repeats the string
+        }
+    </script>
+</head>
+<body>
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+
+    <button onclick="myFunction1()">Click me</button>
+    <p id="demo1"></p>
+</body>
+</html>
