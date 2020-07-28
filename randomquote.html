@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quotes</title>
+    <script>
+        var randomQuotes=[
+            "Don\'t take rest after your first victory because if you fail In second, more lips are waiting to say that your first victory was just luck.",
+            "To succeed In your mission, you must have a single-minded devotion to your goal.",
+            "If you fail, never give up because Fail means “First Attempt In Learning.",
+            "All Of us do not have equal talent. But , all Of us have an equal opportunity to develop our talents.",
+            "Be active! Take on responsibility! Work for the things you believe in. If you do not, you are surrendering your fate to others.",
+            "You cannot change your future, but you can change your habits, and surely your habits will change your future.",
+            "We have no ability to be equal to all have opportunities equal to their ability lane.",
+            "It is very Easy To Defeat Someone, But it is Very Hard To Win Someone.",
+            "If you want to shine like a sun, First burn like the sun.",
+            "Your best teacher is your last mistake.",
+            "Thinking is the capital, Enterprise is the way, and Hard Work is the solution.",
+            "Dream, Dream Dream, Dreams transform into thoughts. And thoughts result In action.",
+            "Suffering is the essence Of success!!!.",
+            "Success Is When Your “Signature” Changes to “Autograph”.",
+            "Small aim is a crime; have great aim.",
+            "For me, there is no such thing aS a negative experience.",
+            "The best brains Of the nation may be found on the last benches Of the classroom."
+        ]
+
+        function Quote(){
+            var randomNumber=Math.floor(Math.random() * (randomQuotes.length));
+            document.getElementById("QuoteID").innerHTML=randomQuotes[randomNumber];
+        }
+    </script>
+</head>
+<body>
+    <h1>Random Quote Generation</h1>
+    <br>
+    <div id="QuoteID">
+        Hi !!!!! Show me some quotes
+    </div>
+    <br>
+    <button onclick="Quote()">Give me Quote</button>
+</body>
+</html>
